@@ -1,0 +1,66 @@
+﻿<Window x:Class="CloudSecurityClient.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="云安全控制台" Height="500" Width="800"
+        WindowState="Maximized"
+        Closing="Window_Closing">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="文件">
+                <MenuItem Header="退出" Click="MenuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="安全">
+                <MenuItem Header="注销" Click="MenuLogout_Click"/>
+                <MenuItem Header="清除本地数据" Click="MenuWipeData_Click"/>
+            </MenuItem>
+            <MenuItem Header="视图">
+                <MenuItem Header="显示系统托盘" Click="MenuShowTray_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TabControl Margin="10">
+            <TabItem Header="仪表盘">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button Content="刷新状态" Click="BtnRefresh_Click"/>
+                        <Button Content="发送测试事件" Click="BtnTestEvent_Click" Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1" x:Name="dgEvents" AutoGenerateColumns="True"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="设置">
+                <StackPanel Margin="10">
+                    <GroupBox Header="安全设置">
+                        <StackPanel>
+                            <CheckBox x:Name="chkAutoLogin" Content="自动登录" Margin="0,5"/>
+                            <CheckBox Content="启用后台监控" IsChecked="True" Margin="0,5"/>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="遥测设置" Margin="0,15,0,0">
+                        <StackPanel>
+                            <CheckBox Content="发送性能数据" IsChecked="True" Margin="0,5"/>
+                            <CheckBox Content="发送安全事件" IsChecked="True" Margin="0,5"/>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="txtStatus" Text="就绪"/>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <TextBlock Text="{Binding CurrentUser}"/>
+            </StatusBarItem>
+        </StatusBar>
+    </DockPanel>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+	<!-- 在.csproj文件中添加 -->
+	<PropertyGroup>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>YourKey.snk</AssemblyOriginatorKeyFile>
+		<PublishUrl>https://deploy.example.com/security-client/</PublishUrl>
+		<InstallUrl>https://download.example.com/security-client/</InstallUrl>
+		<ProductName>CloudSecurityClient</ProductName>
+		<ApplicationVersion>1.0.0.0</ApplicationVersion>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<SelfContained>false</SelfContained>
+		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+	</PropertyGroup>
+
+</Project>

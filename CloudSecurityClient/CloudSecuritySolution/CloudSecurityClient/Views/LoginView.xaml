@@ -1,0 +1,29 @@
+﻿<Window x:Class="CloudSecurityClient.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="云安全平台登录" Height="300" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="用户名" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtUsername" Grid.Row="1" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="2" Text="密码" Margin="0,0,0,5"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="3" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="4" Text="双因素认证码" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtTotp" Grid.Row="5" Margin="0,0,0,15" MaxLength="6"/>
+
+        <Button Grid.Row="6" Content="登录" Click="BtnLogin_Click" 
+                HorizontalAlignment="Center" Padding="20,5"/>
+    </Grid>
+</Window>

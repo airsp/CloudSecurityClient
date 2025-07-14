@@ -1,0 +1,11 @@
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\LoginView.baml
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\MainView.baml
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\TrayIconView.baml
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\App.baml
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\MainWindow.g.cs
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\LoginView.g.cs
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\MainView.g.cs
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\Views\TrayIconView.g.cs
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\App.g.cs
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\CloudSecurityClient_MarkupCompile.cache
+E:\code\CloudSecurityClient\CloudSecuritySolution\CloudSecurityClient\obj\Debug\net6.0-windows\win-x64\CloudSecurityClient_MarkupCompile.lref
